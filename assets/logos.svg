@@ -8,7 +8,7 @@
     <linearGradient id="abyssGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#03045e" />
       <stop offset="100%" stop-color="#0077b6" />
-    </linearGradient>
+    </linearGradient>a
     <linearGradient id="earthCore" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffb703" />
       <stop offset="50%" stop-color="#fb8500" />
@@ -16,7 +16,7 @@
     </linearGradient>
 
     <!-- === SPRITE 1: ICONO ABBYS (Fosa Abisal / Océano) === -->
-    <symbol id="icon-abbys" viewBox="0 0 200 200">
+    <symbol id="icon-abyss" viewBox="0 0 200 200">
       <!-- Contenedor circular con fondo oscuro integrado -->
       <circle cx="100" cy="100" r="95" fill="#161b22" stroke="#30363d" stroke-width="2"/>
       <circle cx="100" cy="100" r="80" fill="none" stroke="#1f6feb" stroke-width="2" stroke-dasharray="6,4" opacity="0.6"/>
