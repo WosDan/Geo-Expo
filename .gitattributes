@@ -1,0 +1,23 @@
+# Forzar a que todos los archivos de texto se normalicen a saltos de línea LF al guardarse en el repositorio
+* text=auto
+
+# Asegurar que el código fuente siempre use LF al clonarse o extraerse (estándar multiplataforma)
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Forzar a que los archivos SVG y vectores siempre mantengan LF (evita tu advertencia actual)
+*.svg text eol=lf
+
+# Denotar archivos que siempre deben tratarse como binarios para que Git no intente modificar sus líneas
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary

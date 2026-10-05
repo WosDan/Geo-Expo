@@ -1,0 +1,26 @@
+# Dependencias
+node_modules/
+
+# Salida de producción (Build)
+dist/
+
+# Carpetas y archivos generados por Astro
+.astro/
+
+# Caché y logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+
+# Variables de entorno (Datos sensibles)
+.env
+.env.production
+.env.development
+.env.local
+.env.*.local
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
