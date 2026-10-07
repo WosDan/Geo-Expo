@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Interno - Principios Físicos</title>
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
 
-<body>
-    <header>
-        <a href="../index.html">
-            <svg width="10" height="10" role="img" aria-label="Icono de sección">
+<body class="min-h-screen flex flex-col antialiased">
+    <header class="header-main">
+        <a class="brand-anchor" href="../index.html">
+            <svg class="brand-svg" role="img" aria-label="Icono de sección">
                 <use href="../assets/logos.svg#icon-abyss" />
             </svg>
             GeoExpo
         </a>
         <nav>
-            <ul>
+            <ul class="header-main-nav-ul">
                 <li>
-                    <a href="../abyss/index.html">
+                    <a class="block hover:scale-105 transition" href="../abyss/index.html">
                         <svg width="60" height="60" role="img" aria-label="Logo de A.B.Y.S.S">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
@@ -26,7 +27,7 @@
                 </li>
 
                 <li>
-                    <a href="../mundo-interno/index.html" aria-current="page" aria-label="Estás en la sección de Mundo Interno">
+                    <a class="block hover:scale-105 transition" href="../mundo-interno/index.html">
                         <svg width="60" height="60" role="img" aria-label="Logo de Mundo Interno">
                             <use href="../assets/logos.svg#icon-mundo-interno" />
                         </svg>
@@ -37,22 +38,23 @@
     </header>
 
     <main>
-        <header>
+        <header class="header-sub">
             <h1>
-                <svg width="23" height="23" role="img" aria-label="Logo de Mundo Interno">
+                <svg class="header-sub-h1-svg" role="img" aria-label="Logo de Mundo Interno">
                     <use href="../assets/logos.svg#icon-mundo-interno" />
                 </svg>
                 Mundo Interno
             </h1>
             <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="principios.html">Principios Físicos</a></li>
-                    <li><a href="capas-estructurales.html">Capas estructurales</a></li>
-                    <li><a href="capas-mecanicas.html">Capas mecánicas</a></li>
-                    <li><a href="simulador.html">Simulador de Ondas Sísmicas</a></li>
-                    <li><a href="experimentos.html">Experimentos</a></li>
+                <ul class="nav-links">
+                    <li class="nav-link-item"><a href="index.html">Inicio</a></li>
+                    <li class="nav-link-item"><a href="historia.html">Historia</a></li>
+                    <li class="nav-link-item"><a href="principios.html">Principios Físicos</a></li>
+                    <li class="nav-link-item"><a href="capas-estructurales.html">Capas estructurales</a></li>
+                    <li class="nav-link-item"><a href="capas-mecanicas.html" aria-current="page">Capas mecánicas</a>
+                    </li>
+                    <li class="nav-link-item"><a href="simulador.html">Simulador de Ondas Sísmicas</a></li>
+                    <li class="nav-link-item"><a href="experimentos.html">Experimentos</a></li>
                 </ul>
             </nav>
         </header>
@@ -74,7 +76,10 @@
                 </h3>
                 <div>
                     <p>
-                        Una onda es un “pulso” de energía que se desplaza a través de los materiales de la Tierra. Esta energía solamente hace vibrar a las partículas del material, no se lo lleva consigo. En el contexto de la sismología, los terremotos generan ondas que se propagan por el interior de la Tierra, permitiendo estudiar su estructura. (What are seismic waves? 2025)
+                        Una onda es un “pulso” de energía que se desplaza a través de los materiales de la Tierra. Esta
+                        energía solamente hace vibrar a las partículas del material, no se lo lleva consigo. En el
+                        contexto de la sismología, los terremotos generan ondas que se propagan por el interior de la
+                        Tierra, permitiendo estudiar su estructura. (What are seismic waves? 2025)
                     </p>
                 </div>
             </article>
@@ -88,16 +93,27 @@
                 </h3>
                 <div>
                     <p>
-                        Los terremotos generan dos tipos principales de ondas, la diferencia fundamental entre ellas radica en la forma en que hacen vibrar el material que atraviesan:
+                        Los terremotos generan dos tipos principales de ondas, la diferencia fundamental entre ellas
+                        radica en la forma en que hacen vibrar el material que atraviesan:
                     </p>
                     <p>
-                        <strong>Ondas P (Primarias):</strong> Son ondas longitudinales. Esto significa que las partículas del material vibran en la misma dirección en la que la onda se propaga. Son las más rápidas, por lo que son las primeras en ser detectadas por los sismógrafos (Instrumento que registra los movimientos de la Tierra, como los terremotos), y pueden viajar a través de sólidos, líquidos y gases.
+                        <strong>Ondas P (Primarias):</strong> Son ondas longitudinales. Esto significa que las
+                        partículas del material vibran en la misma dirección en la que la onda se propaga. Son las más
+                        rápidas, por lo que son las primeras en ser detectadas por los sismógrafos (Instrumento que
+                        registra los movimientos de la Tierra, como los terremotos), y pueden viajar a través de
+                        sólidos, líquidos y gases.
                     </p>
                     <p>
-                        <strong>Ondas S (Secundarias):</strong> Son ondas transversales. En este caso, las partículas vibran de forma perpendicular a la propagación de la onda, como las vibraciones de la cuerda de una guitarra. Su velocidad es menor, lo que hace que lleguen después que las P. Sin embargo, su característica más crucial es que no pueden propagarse en medios líquidos o gaseosos, ya que estos fluidos no pueden soportar este tipo de vibración.
+                        <strong>Ondas S (Secundarias):</strong> Son ondas transversales. En este caso, las partículas
+                        vibran de forma perpendicular a la propagación de la onda, como las vibraciones de la cuerda de
+                        una guitarra. Su velocidad es menor, lo que hace que lleguen después que las P. Sin embargo, su
+                        característica más crucial es que no pueden propagarse en medios líquidos o gaseosos, ya que
+                        estos fluidos no pueden soportar este tipo de vibración.
                     </p>
                     <p>
-                        <strong>Utilidad:</strong> El comportamiento diferente de estas ondas fue muy importante. La observación de que las ondas S no lograban atravesar ciertas regiones del planeta proporcionó la evidencia de que existe una capa líquida en el núcleo externo de la tierra. (Desonie. 2025)
+                        <strong>Utilidad:</strong> El comportamiento diferente de estas ondas fue muy importante. La
+                        observación de que las ondas S no lograban atravesar ciertas regiones del planeta proporcionó la
+                        evidencia de que existe una capa líquida en el núcleo externo de la tierra. (Desonie. 2025)
                     </p>
                 </div>
             </article>
@@ -111,16 +127,23 @@
                 </h3>
                 <div>
                     <p>
-                        Cuando las ondas sísmicas encuentran un cambio brusco en las propiedades del material, como una discontinuidad entre dos capas, su comportamiento se altera significativamente, dando lugar a dos fenómenos: la reflexión y la refracción.
+                        Cuando las ondas sísmicas encuentran un cambio brusco en las propiedades del material, como una
+                        discontinuidad entre dos capas, su comportamiento se altera significativamente, dando lugar a
+                        dos fenómenos: la reflexión y la refracción.
                     </p>
                     <p>
-                        <strong>Reflexión:</strong> Ocurre cuando una porción de la energía de la onda choca contra la discontinuidad y retorna hacia el medio del cual provino. Es como si la onda "rebotase".
+                        <strong>Reflexión:</strong> Ocurre cuando una porción de la energía de la onda choca contra la
+                        discontinuidad y retorna hacia el medio del cual provino. Es como si la onda "rebotase".
                     </p>
                     <p>
-                        <strong>Refracción:</strong> Sucede cuando la onda logra penetrar la nueva capa, pero alterando su trayectoria y velocidad. Al pasar a un medio con diferentes propiedades, la onda cambia de dirección y velocidad de propagación.
+                        <strong>Refracción:</strong> Sucede cuando la onda logra penetrar la nueva capa, pero alterando
+                        su trayectoria y velocidad. Al pasar a un medio con diferentes propiedades, la onda cambia de
+                        dirección y velocidad de propagación.
                     </p>
                     <p>
-                        <strong>Utilidad:</strong> La detección y el análisis preciso de las ondas reflejadas y refractadas permitieron a los científicos identificar la profundidad de las discontinuidades. El estudio de estos fenómenos fue esencial para definir los límites entre las capas. (Wang, 2023)
+                        <strong>Utilidad:</strong> La detección y el análisis preciso de las ondas reflejadas y
+                        refractadas permitieron a los científicos identificar la profundidad de las discontinuidades. El
+                        estudio de estos fenómenos fue esencial para definir los límites entre las capas. (Wang, 2023)
                     </p>
                 </div>
             </article>
@@ -134,13 +157,21 @@
                 </h3>
                 <div>
                     <p>
-                        La velocidad de las ondas sísmicas no es constante en el interior de la Tierra. Esta depende directamente de las propiedades físicas del material que atraviesan, principalmente su densidad y su rigidez.
+                        La velocidad de las ondas sísmicas no es constante en el interior de la Tierra. Esta depende
+                        directamente de las propiedades físicas del material que atraviesan, principalmente su densidad
+                        y su rigidez.
                     </p>
                     <p>
-                        De forma simple, la velocidad aumenta cuando las ondas pasan a un material más rígido y denso. Por el contrario, la velocidad disminuye notablemente al encontrar materiales menos rígidos o en estado líquido.
+                        De forma simple, la velocidad aumenta cuando las ondas pasan a un material más rígido y denso.
+                        Por el contrario, la velocidad disminuye notablemente al encontrar materiales menos rígidos o en
+                        estado líquido.
                     </p>
                     <p>
-                        <strong>Utilidad:</strong> El análisis de las variaciones de la velocidad fue fundamental para inferir la composición y el estado físico de las capas internas. Por ejemplo, una aceleración brusca de las ondas P a una profundidad específica permite saber la transición a una capa más densa. De igual modo, la drástica reducción en la velocidad de las ondas P y la desaparición de las ondas S permitió conocer la presencia del núcleo externo líquido. (Cardenas, s/f)
+                        <strong>Utilidad:</strong> El análisis de las variaciones de la velocidad fue fundamental para
+                        inferir la composición y el estado físico de las capas internas. Por ejemplo, una aceleración
+                        brusca de las ondas P a una profundidad específica permite saber la transición a una capa más
+                        densa. De igual modo, la drástica reducción en la velocidad de las ondas P y la desaparición de
+                        las ondas S permitió conocer la presencia del núcleo externo líquido. (Cardenas, s/f)
                     </p>
                 </div>
             </article>
@@ -154,16 +185,31 @@
                 </h3>
                 <div>
                     <p>
-                        Los cuerpos reales son elásticos y se deforman. Estas alteraciones en la forma se ven influenciadas por el esfuerzo, el cual caracteriza la intensidad de las fuerzas que causan el cambio de forma, como un resorte al ser estirado, entre más fuerza más se estira; al mismo tiempo, la deformación describe el cambio resultante, la deformación elástica que afecta a un cuerpo es proporcional al esfuerzo que produce la deformación, a esto se le llama proporcionalidad módulo de elasticidad, que se da siempre y cuando no se exceda el límite de elasticidad. A la proporcionalidad constante entre estos se le denomina ley de Hooke. (GL1 Ley de Hooke, 2017)
+                        Los cuerpos reales son elásticos y se deforman. Estas alteraciones en la forma se ven
+                        influenciadas por el esfuerzo, el cual caracteriza la intensidad de las fuerzas que causan el
+                        cambio de forma, como un resorte al ser estirado, entre más fuerza más se estira; al mismo
+                        tiempo, la deformación describe el cambio resultante, la deformación elástica que afecta a un
+                        cuerpo es proporcional al esfuerzo que produce la deformación, a esto se le llama
+                        proporcionalidad módulo de elasticidad, que se da siempre y cuando no se exceda el límite de
+                        elasticidad. A la proporcionalidad constante entre estos se le denomina ley de Hooke. (GL1 Ley
+                        de Hooke, 2017)
                     </p>
                     <p>
                         <em>Esfuerzo / Deformación = Módulo de elasticidad</em>
                     </p>
                     <p>
-                        Un objeto está en tensión cuando se aplican fuerzas de igual magnitud F en direcciones opuestas en los extremos. La deformación por tensión es el estiramiento por unidad de longitud. Si las fuerzas en los extremos de la barra empujan en vez de tirar esta estopa en compresión. (Young, Freedman, & Ford, 2016, p. 389)
+                        Un objeto está en tensión cuando se aplican fuerzas de igual magnitud F en direcciones opuestas
+                        en los extremos. La deformación por tensión es el estiramiento por unidad de longitud. Si las
+                        fuerzas en los extremos de la barra empujan en vez de tirar esta estopa en compresión. (Young,
+                        Freedman, & Ford, 2016, p. 389)
                     </p>
                     <p>
-                        A todo esto, llegamos hasta las placas tectónicas, las cuales son grandes cuerpos elásticos que están en constante movimiento y ejercen fuerzas entre sí. Cuando estas actúan en los bordes de las placas se deforman lentamente debido a la presión, acumulando así energía potencial. Según la Ley de Hooke, cuando el esfuerzo supera el límite elástico ocurre una ruptura repentina liberando la energía acumulada en ondas sísmicas. Esto se conoce como rebote elástico, propuesto por H.F. Reid después del terremoto de San Francisco de 1906 (Tarbuck, Lutgens, & Tasa, 2005).
+                        A todo esto, llegamos hasta las placas tectónicas, las cuales son grandes cuerpos elásticos que
+                        están en constante movimiento y ejercen fuerzas entre sí. Cuando estas actúan en los bordes de
+                        las placas se deforman lentamente debido a la presión, acumulando así energía potencial. Según
+                        la Ley de Hooke, cuando el esfuerzo supera el límite elástico ocurre una ruptura repentina
+                        liberando la energía acumulada en ondas sísmicas. Esto se conoce como rebote elástico, propuesto
+                        por H.F. Reid después del terremoto de San Francisco de 1906 (Tarbuck, Lutgens, & Tasa, 2005).
                     </p>
                 </div>
             </article>
