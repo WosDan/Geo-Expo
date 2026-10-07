@@ -6,20 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mundo Interno - Capas mecánicas</title>
   <script src="../js/dialog.js" defer></script>
+  <link rel="stylesheet" href="../dist/output.css">
 </head>
 
-<body>
-  <header>
-    <a href="../index.html">
-      <svg width="10" height="10" role="img" aria-label="Icono de sección">
+<body class="min-h-screen flex flex-col antialiased">
+  <header class="header-main">
+    <a class="brand-anchor" href="../index.html">
+      <svg class="brand-svg" role="img" aria-label="Icono de sección">
         <use href="../assets/logos.svg#icon-abyss" />
       </svg>
       GeoExpo
     </a>
     <nav>
-      <ul>
+      <ul class="header-main-nav-ul">
         <li>
-          <a href="../abyss/index.html">
+          <a class="block hover:scale-105 transition" href="../abyss/index.html">
             <svg width="60" height="60" role="img" aria-label="Logo de A.B.Y.S.S">
               <use href="../assets/logos.svg#icon-abyss" />
             </svg>
@@ -27,7 +28,7 @@
         </li>
 
         <li>
-          <a href="../mundo-interno/index.html" aria-current="page" aria-label="Estás en la sección de Mundo Interno">
+          <a class="block hover:scale-105 transition" href="../mundo-interno/index.html">
             <svg width="60" height="60" role="img" aria-label="Logo de Mundo Interno">
               <use href="../assets/logos.svg#icon-mundo-interno" />
             </svg>
@@ -38,22 +39,22 @@
   </header>
 
   <main>
-    <header>
+    <header class="header-sub">
       <h1>
-        <svg width="23" height="23" role="img" aria-label="Logo de Mundo Interno">
+        <svg class="header-sub-h1-svg" role="img" aria-label="Logo de Mundo Interno">
           <use href="../assets/logos.svg#icon-mundo-interno" />
         </svg>
         Mundo Interno
       </h1>
       <nav>
-        <ul>
-          <li><a href="index.html">Inicio</a></li>
-          <li><a href="historia.html">Historia</a></li>
-          <li><a href="principios.html">Principios Físicos</a></li>
-          <li><a href="capas-estructurales.html">Capas estructurales</a></li>
-          <li><a href="capas-mecanicas.html" aria-current="page">Capas mecánicas</a></li>
-          <li><a href="simulador.html">Simulador de Ondas Sísmicas</a></li>
-          <li><a href="experimentos.html">Experimentos</a></li>
+        <ul class="nav-links">
+          <li class="nav-link-item"><a href="index.html">Inicio</a></li>
+          <li class="nav-link-item"><a href="historia.html">Historia</a></li>
+          <li class="nav-link-item"><a href="principios.html">Principios Físicos</a></li>
+          <li class="nav-link-item"><a href="capas-estructurales.html">Capas estructurales</a></li>
+          <li class="nav-link-item"><a href="capas-mecanicas.html" aria-current="page">Capas mecánicas</a></li>
+          <li class="nav-link-item"><a href="simulador.html">Simulador de Ondas Sísmicas</a></li>
+          <li class="nav-link-item"><a href="experimentos.html">Experimentos</a></li>
         </ul>
       </nav>
     </header>

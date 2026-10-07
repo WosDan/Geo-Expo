@@ -10,16 +10,16 @@
 
 <body class="min-h-screen flex flex-col antialiased">
     <header class="header-main">
-        <a href="../index.html" class="flex items-center gap-2 font-bold tracking-wider hover:opacity-80 transition text-lg">
-            <svg width="10" height="10" role="img" aria-label="Icono de sección">
+        <a class="brand-anchor" href="../index.html">
+            <svg class="brand-svg" role="img" aria-label="Icono de sección">
                 <use href="../assets/logos.svg#icon-abyss" />
             </svg>
             GeoExpo
         </a>
         <nav>
-            <ul class="flex items-center gap-6">
+            <ul class="header-main-nav-ul">
                 <li>
-                    <a href="../abyss/index.html" class="block hover:scale-105 transition">
+                    <a class="block hover:scale-105 transition" href="../abyss/index.html">
                         <svg width="60" height="60" role="img" aria-label="Logo de A.B.Y.S.S">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
@@ -27,7 +27,7 @@
                 </li>
 
                 <li>
-                    <a href="../mundo-interno/index.html" class="block hover:scale-105 transition">
+                    <a class="block hover:scale-105 transition" href="../mundo-interno/index.html">
                         <svg width="60" height="60" role="img" aria-label="Logo de Mundo Interno">
                             <use href="../assets/logos.svg#icon-mundo-interno" />
                         </svg>
@@ -37,10 +37,10 @@
         </nav>
     </header>
 
-    <main class="flex-grow">
+    <main>
         <header class="header-sub">
-            <h1 class="flex items-center gap-3 text-2xl font-black tracking-tight text-white">
-                <svg width="23" height="23" role="img" aria-label="Logo de A.B.Y.S.S">
+            <h1>
+                <svg class="header-sub-h1-svg" role="img" aria-label="Logo de A.B.Y.S.S">
                     <use href="../assets/logos.svg#icon-abyss" />
                 </svg>
                 A.B.Y.S.S
@@ -57,20 +57,20 @@
             </nav>
         </header>
 
-        <section id="inicio">
-            <hgroup>
-                <p>
-                    <svg width="10" height="10" role="img" aria-label="Icono de sección">
+        <section class="topic-section" id="inicio">
+            <hgroup class="section-hgroup" >
+                <p class="hgroup-paragraph">
+                    <svg class="icon-title" role="img" aria-label="Icono de sección">
                         <use href="../assets/logos.svg#icon-abyss" />
                     </svg>
                     Batimetría & Oceanografía
                 </p>
-                <h2>Introducción</h2>
+                <h2 class="title-section">Introducción</h2>
             </hgroup>
 
-            <img src="../assets/logos.svg" alt="Imagen de introduccion">
+            <img class="rounded-2xl" src="../assets/logos.svg" alt="Imagen de introduccion">
 
-            <p>
+            <p class="text-paragraphs">
                 ¿Alguna vez has mirado el océano y te has preguntado qué hay allá abajo, en lo más profundo? A simple
                 vista, el mar parece solo una enorme masa de agua azul y plana. Pero si pudiéramos quitarle toda el agua
                 como si abriéramos el tapón de una bañera gigante descubriríamos un mundo asombroso. Bajo las olas hay
@@ -79,12 +79,12 @@
                 hacer mapas de todo ese relieve oculto la llamamos batimetría. Que viene de dos palabras griegas
                 antiguas: bathys (profundo) y metron (medida). Es decir, medir las profundidades.
             </p>
-            <p>
+            <p class="text-paragraphs">
                 Hoy en día, basta con mirar una pantalla o tocar un teléfono para ver un mapa en 3D del suelo marino.
                 Pero esto no siempre fue así. Durante miles de años, el fondo del océano fue el misterio más grande del
                 planeta Tierra.
             </p>
-            <p>
+            <p class="text-paragraphs pb-2.5 border-b border-zinc-500">
                 Para resolverlo, la humanidad tuvo que emprender una aventura increíble que duró siglos: esta comenzó
                 con los marineros antiguos, que lanzaban al agua varas de madera o cuerdas con pesas de plomo untadas
                 con grasa para tocar el suelo y saber si sus barcos podían pasar sin chocar hasta el día de hoy en el

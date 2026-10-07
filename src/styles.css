@@ -2,11 +2,11 @@
 
 @layer components {
   .header-main {
-    @apply flex flex-col sm:flex-row items-center justify-between px-4 sm:px-8 py-4 bg-zinc-900 text-white shadow-md border-b border-zinc-800 gap-4 sm:gap-0;
+    @apply flex flex-col sm:flex-row items-center justify-between px-4 py-4 bg-zinc-900 text-white shadow-md border-b border-zinc-800 gap-4 sm:gap-0;
   }
 
   .header-sub {
-    @apply flex flex-col md:flex-row items-center justify-between px-6 py-6 bg-zinc-900/80 border-b border-zinc-800 gap-4 w-full;
+    @apply flex flex-col md:flex-row items-center justify-between px-5 py-2 bg-zinc-900/80 border-b border-zinc-800 gap-4 w-full mb-4;
   }
 
   .nav-links {
@@ -14,6 +14,50 @@
   }
 
   .nav-link-item {
-    @apply text-zinc-400 hover:text-white transition-colors text-xs sm:text-sm font-medium whitespace-nowrap shrink-0;
+    @apply text-zinc-300 hover:text-white transition-colors text-base font-medium whitespace-nowrap shrink-0;
+  }
+
+  .text-paragraphs {
+    @apply text-zinc-900 font-normal;
+  }
+
+  .title-section {
+    @apply text-5xl text-zinc-900 font-semibold tracking-tight;
+  }
+
+  .icon-title {
+    @apply w-1.5 h-6.5 mr-1;
+  }
+
+  .hgroup-paragraph {
+    @apply flex flex-row text-base tracking-tight font-normal;
+  }
+
+  .section-hgroup {
+    @apply flex flex-col gap-0 border-zinc-500 border-t pt-2.5;
+  }
+
+  .header-sub-h1-svg {
+    @apply w-10 h-10;
+  }
+
+  h1 {
+    @apply flex items-center gap-3 text-2xl font-extrabold tracking-widest text-white;
+  }
+
+  .brand-anchor {
+    @apply flex flex-row items-center gap-3 text-zinc-200 text-3xl font-bold tracking-normal;
+  }
+
+  .brand-svg {
+    @apply w-15 h-15;
+  }
+
+  .header-main-nav-ul {
+    @apply flex items-center gap-6;
+  }
+
+  .topic-section {
+    @apply flex flex-col mx-10 md:mx-45 mb-8 gap-4;
   }
 }

@@ -5,57 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Interno - Inicio</title>
+    <link rel="stylesheet" href="../dist/output.css">
 </head>
 
-<body>
-    <header>
-        <a href="../index.html">
-            <svg width="10" height="10" role="img" aria-label="Icono de sección">
-                <use href="../assets/logos.svg#icon-abyss" />
+<body class="min-h-screen flex flex-col antialiased">
+  <header class="header-main">
+    <a class="brand-anchor" href="../index.html">
+      <svg class="brand-svg" role="img" aria-label="Icono de sección">
+        <use href="../assets/logos.svg#icon-abyss" />
+      </svg>
+      GeoExpo
+    </a>
+    <nav>
+      <ul class="header-main-nav-ul">
+        <li>
+          <a class="block hover:scale-105 transition" href="../abyss/index.html">
+            <svg width="60" height="60" role="img" aria-label="Logo de A.B.Y.S.S">
+              <use href="../assets/logos.svg#icon-abyss" />
             </svg>
-            GeoExpo
-        </a>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../abyss/index.html">
-                        <svg width="60" height="60" role="img" aria-label="Logo de A.B.Y.S.S">
-                            <use href="../assets/logos.svg#icon-abyss" />
-                        </svg>
-                    </a>
-                </li>
+          </a>
+        </li>
 
-                <li>
-                    <a href="../mundo-interno/index.html">
-                        <svg width="60" height="60" role="img" aria-label="Logo de Mundo Interno">
-                            <use href="../assets/logos.svg#icon-mundo-interno" />
-                        </svg>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <li>
+          <a class="block hover:scale-105 transition" href="../mundo-interno/index.html">
+            <svg width="60" height="60" role="img" aria-label="Logo de Mundo Interno">
+              <use href="../assets/logos.svg#icon-mundo-interno" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <header class="header-sub">
+      <h1>
+        <svg class="header-sub-h1-svg" role="img" aria-label="Logo de Mundo Interno">
+          <use href="../assets/logos.svg#icon-mundo-interno" />
+        </svg>
+        Mundo Interno
+      </h1>
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-link-item"><a href="index.html">Inicio</a></li>
+          <li class="nav-link-item"><a href="historia.html">Historia</a></li>
+          <li class="nav-link-item"><a href="principios.html">Principios Físicos</a></li>
+          <li class="nav-link-item"><a href="capas-estructurales.html">Capas estructurales</a></li>
+          <li class="nav-link-item"><a href="capas-mecanicas.html" aria-current="page">Capas mecánicas</a>
+          </li>
+          <li class="nav-link-item"><a href="simulador.html">Simulador de Ondas Sísmicas</a></li>
+          <li class="nav-link-item"><a href="experimentos.html">Experimentos</a></li>
+        </ul>
+      </nav>
     </header>
-
-    <main>
-        <header>
-            <h1>
-                <svg width="23" height="23" role="img" aria-label="Logo de Mundo Interno">
-                    <use href="../assets/logos.svg#icon-mundo-interno" />
-                </svg>
-                Mundo Interno
-            </h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="principios.html">Principios Físicos</a></li>
-                    <li><a href="capas-estructurales.html">Capas estructurales</a></li>
-                    <li><a href="capas-mecanicas.html">Capas mecánicas</a></li>
-                    <li><a href="simulador.html">Simulador de Ondas Sísmicas</a></li>
-                    <li><a href="experimentos.html">Experimentos</a></li>
-                </ul>
-            </nav>
-        </header>
 
         <section id="inicio">
             <hgroup>
@@ -69,7 +71,13 @@
             </hgroup>
 
             <p>
-                ¿Cómo podemos saber qué hay en el centro de la Tierra si nunca hemos podido llegar hasta allí? La respuesta está en la física. A pesar de que los pozos más profundos solo han raspado la capa más superficial de la tierra, los científicos han logrado "ver" su interior gracias a un fenómeno natural: los sismos[cite: 7]. Estos liberan ondas que actúan como un escáner gigante, viajando a través de las capas del planeta y revelando su estructura interna[cite: 7]. A continuación, exploraremos los principios físicos que nos permitieron descubrir las capas de la Tierra y las discontinuidades (Limites invisibles que separan las capas del planeta)[cite: 7]. (Baraniuk, 2015)[cite: 7]
+                ¿Cómo podemos saber qué hay en el centro de la Tierra si nunca hemos podido llegar hasta allí? La
+                respuesta está en la física. A pesar de que los pozos más profundos solo han raspado la capa más
+                superficial de la tierra, los científicos han logrado "ver" su interior gracias a un fenómeno natural:
+                los sismos[cite: 7]. Estos liberan ondas que actúan como un escáner gigante, viajando a través de las
+                capas del planeta y revelando su estructura interna[cite: 7]. A continuación, exploraremos los
+                principios físicos que nos permitieron descubrir las capas de la Tierra y las discontinuidades (Limites
+                invisibles que separan las capas del planeta)[cite: 7]. (Baraniuk, 2015)[cite: 7]
             </p>
 
             <hgroup>
@@ -77,14 +85,21 @@
             </hgroup>
 
             <p>
-                Este proyecto busca demostrar físicamente y tecnológicamente los principios de la física aplicados al descubrimiento de las capas de la Tierra y sus discontinuidades[cite: 7]. La propuesta se centra en la divulgación de estos conceptos de una forma accesible, incluso para personas que no están familiarizadas con las geociencias, mediante la creación de una aplicación, maquetas experimentales y simuladores virtuales[cite: 7]. Principios a demostrar (se incluyen de física mecánica y calor-ondas): Conservación de la energía, propagación de ondas sísmicas, principios de reflexión y refracción, elasticidad y rigidez de los materiales, gravedad y densidad, velocidad de ondas sísmicas[cite: 7].
+                Este proyecto busca demostrar físicamente y tecnológicamente los principios de la física aplicados al
+                descubrimiento de las capas de la Tierra y sus discontinuidades[cite: 7]. La propuesta se centra en la
+                divulgación de estos conceptos de una forma accesible, incluso para personas que no están familiarizadas
+                con las geociencias, mediante la creación de una aplicación, maquetas experimentales y simuladores
+                virtuales[cite: 7]. Principios a demostrar (se incluyen de física mecánica y calor-ondas): Conservación
+                de la energía, propagación de ondas sísmicas, principios de reflexión y refracción, elasticidad y
+                rigidez de los materiales, gravedad y densidad, velocidad de ondas sísmicas[cite: 7].
             </p>
 
             <img src="../assets/foto_grupal_mundo_interno.png" alt="Imagen de grupo de Mundo Interno" />
 
             <footer>
                 <p>
-                    Proyecto desarrollado por Sebastián Blanco, María Paz Orozco, Cristina Rincón, Daniel Rincón, Daniel Romero y Deisy Santisteban[cite: 7].
+                    Proyecto desarrollado por Sebastián Blanco, María Paz Orozco, Cristina Rincón, Daniel Rincón, Daniel
+                    Romero y Deisy Santisteban[cite: 7].
                 </p>
             </footer>
         </section>
