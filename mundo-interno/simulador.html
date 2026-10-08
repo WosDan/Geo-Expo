@@ -5,15 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Interno - Simulador de Ondas Sísmicas</title>
+
+    <!-- Meta etiquetas SEO principales -->
+    <meta name="description"
+        content="Simulador interactivo de ondas sísmicas en 2D/3D. Observa el comportamiento de las ondas a través de las capas internas de la Tierra.">
+    <meta name="keywords"
+        content="simulador de ondas sismicas, simulador geofisica, propagacion de ondas, interactivo tierra, geologia interactiva, geoexpo">
+    <meta name="author" content="GeoExpo - Mundo Interno">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tudominio.com/mundo-interno/simulador.html">
+
+    <!-- Favicon e Iconos -->
+    <link rel="icon" type="image/png" href="../assets/geoexpo_icon.png">
+    <link rel="apple-touch-icon" href="../assets/geoexpo_icon.png">
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Simulador de Ondas Sísmicas - Mundo Interno | GeoExpo">
+    <meta property="og:description"
+        content="Experimenta e interactúa con nuestro simulador para entender cómo se propagan las ondas sísmicas en el planeta.">
+    <meta property="og:url" content="https://tudominio.com/mundo-interno/simulador.html">
+    <meta property="og:image" content="https://tudominio.com/assets/geoexpo_icon.png">
+    <meta property="og:site_name" content="GeoExpo">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Simulador Interactivo de Ondas Sísmicas - GeoExpo">
+    <meta name="twitter:description"
+        content="Herramienta interactiva para visualizar el comportamiento de sismos en las capas terrestres.">
+    <meta name="twitter:image" content="https://tudominio.com/assets/geoexpo_icon.png">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- Datos Estructurados (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Simulador de Ondas Sísmicas GeoExpo",
+      "operatingSystem": "Web",
+      "applicationCategory": "EducationalApplication",
+      "description": "Aplicación web interactiva para la simulación y análisis de ondas sísmicas en la Tierra."
+    }
+    </script>
 </head>
 
 <body class="min-h-screen flex flex-col antialiased">
     <header class="header-main">
         <a class="brand-anchor" href="../index.html">
-            <svg class="brand-svg" role="img" aria-label="Icono de sección">
-                <use href="../assets/logos.svg#icon-abyss" />
-            </svg>
+            <img class="brand-svg bg-white rounded-full" src="../assets/geoexpo_icon.png" alt="Logo de GeoExpo">
             GeoExpo
         </a>
         <nav>
@@ -59,19 +101,24 @@
             </nav>
         </header>
 
-        <section id="simulador">
-            <hgroup>
-                <p>
-                    <svg width="10" height="10" role="img" aria-label="Icono de sección">
+        <section class="topic-section border-zinc-800 border-y pt-2.5" id="simulador">
+            <hgroup class="section-hgroup">
+                <p class="hgroup-paragraph">
+                    <svg class="icon-title" role="img" aria-label="Icono de sección">
                         <use href="../assets/logos.svg#icon-mundo-interno" />
                     </svg>
                     Estructura de la Tierra y Geofísica
                 </p>
-                <h2>Simulador de Ondas Sísmicas</h2>
+                <h2 class="title-section">Simulador de Ondas Sísmicas</h2>
             </hgroup>
 
-            <iframe id="simulador-iframe" src="../src/app/GeoExpo.html"
-                title="Simulador interactivo de ondas sísmicas"></iframe>
+            <div
+                class="w-full max-w-4xl mx-auto my-4 p-2 bg-white rounded-lg shadow border border-zinc-200 overflow-hidden">
+                <div class="relative w-full aspect-square">
+                    <iframe id="simulador-iframe" class="absolute top-0 left-0 w-full h-full border-0 rounded-md"
+                        src="../src/app/GeoExpo.html" title="Simulador interactivo de ondas sísmicas"></iframe>
+                </div>
+            </div>
         </section>
     </main>
 </body>

@@ -5,15 +5,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.B.Y.S.S - Sobre Nosotros</title>
+
+    <!-- Meta etiquetas SEO principales -->
+    <meta name="description"
+        content="Conoce al equipo de estudiantes de Geología e Ingeniería encargados del desarrollo del proyecto interdisciplinario A.B.Y.S.S.">
+    <meta name="keywords"
+        content="equipo geoexpo, integrantes abyss, geologia e ingenieria, proyecto universitario, universidad del norte">
+    <meta name="author" content="GeoExpo - A.B.Y.S.S">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tudominio.com/abyss/sobre-nosotros.html">
+
+    <!-- Favicon e Iconos -->
+    <link rel="icon" type="image/png" href="../assets/geoexpo_icon.png">
+    <link rel="apple-touch-icon" href="../assets/geoexpo_icon.png">
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Sobre Nosotros - Equipo de Trabajo | A.B.Y.S.S">
+    <meta property="og:description"
+        content="Conoce a los desarrolladores y creadores del proyecto GeoExpo - A.B.Y.S.S.">
+    <meta property="og:url" content="https://tudominio.com/abyss/sobre-nosotros.html">
+    <meta property="og:image" content="https://tudominio.com/assets/cristina.png">
+    <meta property="og:site_name" content="GeoExpo">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sobre Nosotros - Equipo A.B.Y.S.S | GeoExpo">
+    <meta name="twitter:description"
+        content="Estudiantes de Geología e Ingeniería detrás de la iniciativa GeoExpo A.B.Y.S.S.">
+    <meta name="twitter:image" content="https://tudominio.com/assets/cristina.png">
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- Datos Estructurados (Schema.org / JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "Sobre Nosotros - Equipo A.B.Y.S.S",
+      "description": "Información sobre el equipo de trabajo multidisciplinario de GeoExpo A.B.Y.S.S."
+    }
+    </script>
 </head>
 
 <body class="min-h-screen flex flex-col antialiased">
     <header class="header-main">
         <a class="brand-anchor" href="../index.html">
-            <svg class="brand-svg" role="img" aria-label="Icono de sección">
-                <use href="../assets/logos.svg#icon-abyss" />
-            </svg>
+            <img class="brand-svg bg-white rounded-full" src="../assets/geoexpo_icon.png" alt="Logo de GeoExpo">
             GeoExpo
         </a>
         <nav>
@@ -57,10 +97,10 @@
             </nav>
         </header>
 
-        <section class="topic-section" id="nosotros">
+        <section class="topic-section border-zinc-800 border-t pt-2.5" id="nosotros">
             <hgroup class="section-hgroup">
                 <p class="hgroup-paragraph">
-                    <svg class="icon-title" width="10" height="10" role="img" aria-label="Icono de sección">
+                    <svg class="icon-title" role="img" aria-label="Icono de sección">
                         <use href="../assets/logos.svg#icon-abyss" />
                     </svg>
                     Equipo de Trabajo
@@ -74,24 +114,26 @@
 
             <ul>
                 <li>
-                    <article>
-                        <hgroup>
-                            <p>
-                                <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                    <article class="p-2.5 border rounded-lg">
+                        <hgroup class="section-hgroup text-zinc-800">
+                            <p class="hgroup-paragraph">
+                                <svg class="icon-title" role="img" aria-label="Icono de sección">
                                     <use href="../assets/logos.svg#icon-abyss" />
                                 </svg>
                                 Integrante
                             </p>
-                            <h3>Cristina</h3>
+                            <h3 class="text-3xl font-medium">Cristina</h3>
                         </hgroup>
 
-                        <p class="nombre-completo">Cristina Sofía Rincón Navarro</p>
-                        <p>Estudiante de Geología e Ingeniería Civil</p>
-                        <p>Rol temporal</p>
+                        <ul class="grid md:grid-cols-3 p-2 bg-zinc-50 rounded-sm border-y mb-3 text-zinc-800">
+                            <li class="nombre-completo">Cristina Sofía Rincón Navarro</li>
+                            <li>Estudiante de Geología e Ingeniería Civil</li>
+                            <li>Rol temporal</li>
+                        </ul>
 
-                        <img src="../assets/cristina.png" alt="Foto de Cristina">
+                        <img class="my-1" src="../assets/cristina.png" alt="Foto de Cristina">
 
-                        <p>Descripción temporal</p>
+                        <p class="border-zinc-300 border-y py-2 text-zinc-800">Descripción temporal</p>
                     </article>
                 </li>
             </ul>
