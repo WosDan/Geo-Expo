@@ -5,15 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A.B.Y.S.S - Metodología</title>
-<link rel="stylesheet" href="../dist/output.css">
+
+    <!-- Meta etiquetas SEO principales -->
+    <meta name="description"
+        content="Flujo operativo del proyecto A.B.Y.S.S: desde la detección con sensores piezoeléctricos y microcontroladores hasta la visualización en la interfaz web.">
+    <meta name="keywords"
+        content="metodologia abyss, sensor piezoelectrico, microcontrolador, amplificadores de senal, interfaz web, mapeo en tiempo real, maqueta batimetrica">
+    <meta name="author" content="GeoExpo - A.B.Y.S.S">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://tudominio.com/abyss/metodologia.html">
+
+    <!-- Favicon e Iconos -->
+    <link rel="icon" type="image/png" href="../assets/geoexpo_icon.png">
+    <link rel="apple-touch-icon" href="../assets/geoexpo_icon.png">
+
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Metodología y Arquitectura del Sistema | A.B.Y.S.S">
+    <meta property="og:description"
+        content="Proceso de captura, amplificación y procesamiento de datos para el mapeo con la maqueta interactiva A.B.Y.S.S.">
+    <meta property="og:url" content="https://tudominio.com/abyss/metodologia.html">
+    <meta property="og:image" content="https://tudominio.com/assets/geoexpo_icon.png">
+    <meta property="og:site_name" content="GeoExpo">
+    <meta property="og:locale" content="es_ES">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Metodología del Sistema A.B.Y.S.S | GeoExpo">
+    <meta name="twitter:description"
+        content="Arquitectura del hardware y software utilizado para procesar datos de relieve y mostrarlos en tiempo real.">
+    <meta name="twitter:image" content="https://tudominio.com/assets/geoexpo_icon.png">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../dist/output.css">
+
+    <!-- Datos Estructurados (Schema.org / JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Metodología y Flujo Operativo de A.B.Y.S.S",
+      "description": "Arquitectura general para la captura, procesamiento digital y renderizado web de datos sísmicos y de relieve.",
+      "inLanguage": "es"
+    }
+    </script>
 </head>
 
 <body class="min-h-screen flex flex-col antialiased">
     <header class="header-main">
         <a class="brand-anchor" href="../index.html">
-            <svg class="brand-svg" role="img" aria-label="Icono de sección">
-                <use href="../assets/logos.svg#icon-abyss" />
-            </svg>
+            <img class="brand-svg bg-white rounded-full" src="../assets/geoexpo_icon.png" alt="Logo de GeoExpo">
             GeoExpo
         </a>
         <nav>
@@ -57,69 +98,69 @@
             </nav>
         </header>
 
-        <section id="metodologia">
-            <hgroup>
-                <p>
+        <section class="topic-section border-zinc-800 border-t pt-2.5" id="inicio">
+            <hgroup class="section-hgroup">
+                <p class="hgroup-paragraph">
                     <svg width="10" height="10" role="img" aria-label="Icono de sección">
                         <use href="../assets/logos.svg#icon-abyss" />
                     </svg>
                     Proceso y Arquitectura del Sistema
                 </p>
-                <h2>Metodología</h2>
+                <h2 class="title-section">Metodología</h2>
             </hgroup>
 
             <nav aria-labelledby="indice-metodologia">
-                <h3 id="indice-metodologia">
-                    <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                <h3 id="indice-metodologia" class="flex items-center gap-3 pb-3 mb-5 border-b border-gray-200">
+                    <svg class="icon-title" role="img" aria-label="Icono de sección">
                         <use href="../assets/logos.svg#icon-abyss" />
                     </svg>
                     Flujo de Operación del Sistema A.B.Y.S.S.
                 </h3>
-                <ol>
-                    <li>
-                        <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                <ol class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 content-stretch">
+                    <li class="flex flex-row border border-zinc-300 rounded-lg p-3">
+                        <svg class="icon-title" role="img" aria-label="Icono de sección">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
                         Superficie de la maqueta
                     </li>
-                    <li>
-                        <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                    <li class="flex flex-row border border-zinc-300 rounded-lg p-3">
+                        <svg class="icon-title" role="img" aria-label="Icono de sección">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
                         Aguja del sensor
                     </li>
-                    <li>
-                        <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                    <li class="flex flex-row border border-zinc-300 rounded-lg p-3">
+                        <svg class="icon-title" role="img" aria-label="Icono de sección">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
                         Sensor piezoeléctrico
                     </li>
-                    <li>
-                        <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                    <li class="flex flex-row border border-zinc-300 rounded-lg p-3">
+                        <svg class="icon-title" role="img" aria-label="Icono de sección">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
                         Amplificadores
                     </li>
-                    <li>
-                        <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                    <li class="flex flex-row border border-zinc-300 rounded-lg p-3">
+                        <svg class="icon-title" role="img" aria-label="Icono de sección">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
                         Microcontrolador
                     </li>
-                    <li>
-                        <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                    <li class="flex flex-row border border-zinc-300 rounded-lg p-3">
+                        <svg class="icon-title" role="img" aria-label="Icono de sección">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
                         Computadora
                     </li>
-                    <li>
-                        <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                    <li class="flex flex-row border border-zinc-300 rounded-lg p-3">
+                        <svg class="icon-title" role="img" aria-label="Icono de sección">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
                         Interfaz Web
                     </li>
-                    <li>
-                        <svg width="10" height="10" role="img" aria-label="Icono de sección">
+                    <li class="flex flex-row border border-zinc-300 rounded-lg p-3">
+                        <svg class="icon-title" role="img" aria-label="Icono de sección">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
                         Gráficos
@@ -127,15 +168,15 @@
                 </ol>
             </nav>
 
-            <article>
-                <hgroup>
-                    <p>
-                        <svg width="10" height="10" role="img" aria-label="Icono de sección">
+            <article class="flex flex-col gap-3">
+                <hgroup class="section-hgroup mb-3">
+                    <p class="hgroup-paragraph">
+                        <svg class="icon-title" role="img" aria-label="Icono de sección">
                             <use href="../assets/logos.svg#icon-abyss" />
                         </svg>
                         Arquitectura General
                     </p>
-                    <h3>Función dentro del proyecto A.B.Y.S.S.</h3>
+                    <h3 class="text-3xl font-medium">Función dentro del proyecto A.B.Y.S.S.</h3>
                 </hgroup>
                 <p>
                     El sensor piezoeléctrico está dotado de una aguja fina que detecta la elevación del terreno al
