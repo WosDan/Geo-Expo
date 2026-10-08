@@ -33,6 +33,14 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      # 2. Configurar Node.js en la máquina virtual
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      # 3. Instalar las dependencias de tu proyecto (incluye Tailwind)
+      - name: Install dependencies
+        run: npm install
       - name: Build Tailwind
         run: npx tailwindcss -i ./src/styles.css -o ./dist/output.css --minify
       - name: Upload artifact
